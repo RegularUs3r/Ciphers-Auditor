@@ -17,10 +17,8 @@ if [[ "$evall" ==  *"No such file or directory"* ]];then
       echo "[!]-Strip out the protocol \`http(s)://\`"
   else
     if [[ $dots -gt 1 ]];then
-      echo "ali $1"
       auditor $1
     elif [[ $dots -eq 1 && $1 == *.com || $dots -eq 1 && $1 == *com.br ]];then
-      echo "aqui $1"
       auditor $1
     else
       echo "[!]-That's not a valid target"
