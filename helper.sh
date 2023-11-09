@@ -63,17 +63,6 @@ auditor () {
 
     hold="[*] Sorting output. Please Wait!"
     echo $hold
-#    dis_ok="\033[30m####\033[m"
-#    dis_dan="\033[31m####\033[m"
-#    good="\033[34m####\033[m"
-#    status=$(cat .*.txt | awk -F "-" '{print $3}' | sort -u)
-#    for c in "TLSv1.0" "TLSv1.1" "TLSv1.2" "TLSv1.3";do
-#      if [[ $status == *"$c"* ]];then
-#        if [[ 
-#      else
-#        echo "$c disabled"
-#      fi
-#    done
     if [[ "$secure_results" == *"empty"* ]];then
     :
     elif [[ "$secure_results" == *"cannot open"* ]];then
@@ -110,7 +99,6 @@ auditor () {
     rm .not-found.txt
     fi
     rm .out .ready-to-go
-    #for x in $(cat *.txt)
     echo ""
   fi
 }
