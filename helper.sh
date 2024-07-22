@@ -12,7 +12,7 @@ auditor () {
   if [[ -z $data ]];then
     :
   else
-    echo -e $Orange"Powered By: BERGHEM - Smart Information Security"$NC
+    echo -e $Orange"Created By: RegularUs3r"$NC
     for ciphers in $data
     do
       echo $ciphers >> .out
