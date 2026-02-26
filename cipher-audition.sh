@@ -5,7 +5,6 @@ Yellow='\033[1;33m'
 Red='\033[0;31m'
 Green='\033[0;32m'
 NC='\033[0m'
-#echo -e $Orange"Powered By: BERGHEM - Smart Information Security"$NC
 
 evall=$(file $1)
 source helper.sh
